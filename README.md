@@ -1,14 +1,14 @@
 # Flask REST API Demo
 
-This project demonstrates a simple REST API built with Python's Flask framework. The API performs CRUD (Create, Read, Update, Delete) operations on user data, which can be tested locally and deployed to Azure App Service for cloud hosting.
+This project demonstrates a simple REST API built with Python's Flask framework. The API performs CRUD (Create, Read, Update, Delete) operations on student data.
 
 ## Features
 
-- Retrieve all users
-- Retrieve a specific user by ID
-- Create a new user
-- Update an existing user
-- Delete a user
+- Retrieve all students
+- Retrieve a specific student by ID
+- Create a new student
+- Update an existing student
+- Delete a student
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ To run the Flask API on your local machine:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/ramymohamed10/rest-api-demo.git
+   git clone https://github.com/Scot8/rest-api-student
    
 2. Navigate to the project directory:
    ```bash
@@ -66,3 +66,11 @@ You can learn more about Azure App Service and its features in the [official doc
 
 To learn how to deploy a Python web app (Django, Flask, or FastAPI) to Azure App Service, refer to the [Quickstart Guide](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cazure-cli-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli). This guide walks you through deploying a Python web app to Azure, leveraging App Service to run your app in a Linux server environment.
 
+API Endpoints
+GET /: Welcome message
+GET /health: Health check
+GET /students: Retrieve all students
+GET /students/<int:student_id>: Retrieve a specific student by ID
+POST /students: Create a new student
+PUT /students/<int:student_id>: Update an existing student by ID
+DELETE /students/<int:student_id>: Delete a student by ID
