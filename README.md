@@ -74,3 +74,5 @@ GET /students/<int:student_id>: Retrieve a specific student by ID
 POST /students: Create a new student
 PUT /students/<int:student_id>: Update an existing student by ID
 DELETE /students/<int:student_id>: Delete a student by ID
+
+![image](https://github.com/user-attachments/assets/bede4bb1-445b-4eb0-b118-cf1dd04d0710)
